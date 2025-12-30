@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berra | Özür ve Samimiyet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/hearts.png">
+</head>
+<body>
+    <!-- Müzik Kontrolü -->
+    <div class="music-control">
+        <button id="musicBtn">
+            <i class="fas fa-play"></i> Müzik
+        </button>
+        <audio id="bgMusic" loop>
+            <source src="https://assets.codepen.io/1468070/sad-piano.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Ana Sayfa -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="title"><span class="name-highlight">Berra</span>'ya</h1>
+            <p class="subtitle">Belki sadece bir özür değil, gerçek hislerim</p>
+            <button class="cta-btn" id="startBtn">Okumaya Başla <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="floating-hearts"></div>
+        <div class="scroll-hint">
+            <i class="fas fa-angle-double-down"></i>
+        </div>
+    </section>
+
+    <!-- Özür Mektubu -->
+    <section class="letter-section" id="letter">
+        <div class="container">
+            <div class="letter-header">
+                <h2><i class="fas fa-envelope-open-text"></i> Sana Özel</h2>
+                <p class="date">Bugün, saat kaç olursa olsun...</p>
+            </div>
+            
+            <div class="letter-content">
+                <div class="paper">
+                    <p class="letter-text">
+                        Merhaba Berra,<br><br>
+                        Biliyorum, belki bu biraz sıra dışı. Ama bazen mesajlar yetmiyor, aramalar kifayetsiz kalıyor. O yüzden bunu yapmayı seçtim.<br><br>
+                        Yaptığım hatanın farkındayım. Ve şunu anladım: <span class="highlight">Senin gibi bir insanı üzmek, dünyadaki en aptalca şeymiş.</span><br><br>
+                        Seninle konuştuğumuz o kısa zaman bile aslında ne kadar özel olduğunu gösterdi bana. Samimiyetin, gülüşün, o saf halin... Hepsi gerçekten değerli.<br><br>
+                        Sadece bir şans daha vermeni istemiyorum. Sana <strong>kendimi doğru anlatma</strong> şansı vermeni istiyorum. Çünkü ben, senin tanıdığından daha iyi biri olabilirim.<br><br>
+                        Belki arkadaş, belki daha fazlası... Ama kesin olan bir şey var: <span class="highlight">Senin hayatında olmak isterim.</span>
+                    </p>
+                    <div class="signature">
+                        <p>Senden özür dileyen,</p>
+                        <h3>[Senin İsmin]</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Berra İçin 3 Kelime -->
+            <div class="words-for-berra">
+                <h3><i class="fas fa-gem"></i> Seni 3 Kelimede Anlatmam Gerekse:</h3>
+                <div class="word-cards">
+                    <div class="word-card" style="--color: #ff6b8b;">
+                        <div class="word-icon">✨</div>
+                        <h4>Özel</h4>
+                        <p>Herkesin içinde fark edilen</p>
+                    </div>
+                    <div class="word-card" style="--color: #4ecdc4;">
+                        <div class="word-icon">😊</div>
+                        <h4>Samimi</h4>
+                        <p>Olduğun gibi olabilen</p>
+                    </div>
+                    <div class="word-card" style="--color: #ffd166;">
+                        <div class="word-icon">🌟</div>
+                        <h4>Değerli</h4>
+                        <p>Kaybedilmemesi gereken</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ne Yapmak İstiyorum -->
+    <section class="intentions" id="intentions">
+        <div class="container">
+            <h2><i class="fas fa-handshake"></i> Aslında Ne İstiyorum?</h2>
+            <p class="section-sub">Açık ve net...</p>
+            
+            <div class="intention-list">
+                <div class="intention-item">
+                    <div class="intention-number">1</div>
+                    <div class="intention-content">
+                        <h3>Seni Gerçekten Tanımak</h3>
+                        <p>Yüzeysel değil, gerçekten. Müzik zevkini, hayallerini, korkularını...</p>
+                    </div>
+                </div>
+                <div class="intention-item">
+                    <div class="intention-number">2</div>
+                    <div class="intention-content">
+                        <h3>Güvenini Kazanmak</h3>
+                        <p>Zamanla, sabırla ve tutarlı davranışlarımla.</p>
+                    </div>
+                </div>
+                <div class="intention-item">
+                    <div class="intention-number">3</div>
+                    <div class="intention-content">
+                        <h3>Mutlu Etmek</h3>
+                        <p>Sadece lafla değil, hareketlerimle. Küçük sürprizlerle, ilgimle...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mesaj Bölümü -->
+    <section class="final-message" id="final">
+        <div class="container">
+            <div class="final-card">
+                <h2><i class="fas fa-mobile-alt"></i> Cevabın Benim İçin Önemli</h2>
+                <p class="final-text">
+                    Bu siteyi sadece "özür dileyeyim" diye yapmadım. <strong>Senin için emek verdim, düşündüm, hissettiklerimi doğru ifade etmeye çalıştım.</strong>
+                </p>
+                <div class="response-box">
+                    <p>Eğer okuduysan ve bir şans vermeyi düşünüyorsan, bana yazabilir misin?</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>[Telefon Numaran]</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>[Instagram @kullanıcıadın]</span>
+                        </div>
+                    </div>
+                    <p class="small-note"><i>Not: Bu site sadece sana özel. İstediğin zaman kapatabilirsin.</i></p>
+                </div>
+                
+                <!-- Berra için gizli mesaj -->
+                <div class="hidden-message" id="hiddenMessage">
+                    <p>P.S. Eğer buraya kadar okuduysan, seni ciddiye aldığımı anlamışsındır. 💫</p>
+                </div>
+                <button class="secret-btn" id="secretBtn">
+                    <i class="fas fa-star"></i> Gizli Mesaj
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 • Sadece <span class="footer-name">Berra</span> için yapıldı</p>
+        <p class="footer-heart">❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
